@@ -11,7 +11,7 @@
     "test": "jest --watchAll --coverage"
   },
   "keywords": [],
-  "author": "Alejandro Cerezo",
+  "author": "Serafin Alferez",
   "license": "ISC",
   "prettier": {
     "singleQuote": true
