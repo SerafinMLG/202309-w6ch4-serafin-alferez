@@ -1,51 +1,20 @@
-# Week6
+El programa debe recibir dos números por query params (p.e. http://localhost:8000/calculator?a=6&b=3), y devolver el siguiente HTML:
 
-Código de Week6 / Server 
+Resultados:
 
-- Node
-- Express
-- Mongo (Mongoose)
+6 + 3 = 9
 
-- TS...
+6 - 3 = 3
 
-## Installation
+6 * 3 = 18
 
-- TS
+6 / 3 = 2
 
-```shell
-npm i -D typescript
-```
+Si el usuario no ha proporcionado alguno de los números o éstos no son de tipo número, la aplicación debe devolver un HTML con un mensaje de error e interrumpir la ejecución del programa con un código de error.
 
-- config TS
+La app debe abrirse en un puerto por defecto que esté configurado como variable de entorno, pero también se tiene que poder decir expresamente por línea de comandos en qué puerto queremos que se abra (p.e., node . --port 4000). Usar el paquete commander.
 
-```shell
-npx tsc --init
-```
+Si la request no va a /calculator, la app debe responder con un 404.
 
-- eslint & TS
-
-```shell
-npx eslint --init
-
-Consecuencia
-npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-xo
-```
-
-- eslint + prettier
-
-```shell
-npm i -D eslint-config-prettier
-```
-
-- Jest
-
-```shell
-
-npm i -D jest ts-jest @types/jest @types/node jest-ts-webcompat-resolver
-```
-
-- .editorconfig
-- .gitignore
-- npm init
-- git init
-
+Opción extra
+Recoger los números en un formulario y calcular los valores, utilizando SOLO vanila 
